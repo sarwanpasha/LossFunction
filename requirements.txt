@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+scikit-learn
+torch
+torchvision
+imbalanced-learn
+numba
+pysam  # optional, Linux/macOS only; prep_giab_nopysam.py does not need it
