@@ -21,6 +21,12 @@ Each loss trains a classifier whose decision threshold on η is fixed by the los
 | `prep_tabular.py` | Imbalanced-learn benchmark datasets and the credit card fraud dataset |
 | `prep_cifar.py` | CIFAR-10 one-vs-rest long-tailed tasks on frozen ResNet-18 features |
 | `prep_giab.py`, `prep_giab_nopysam.py`, `download_giab.py` | GIAB chr20 germline and mosaic variant scenarios (with or without pysam) |
+| `run_thresh.py` | Retrains selected losses and scores them with the default, validation-tuned and plug-in profile thresholds |
+| `probe_ablation.py` | Re-estimates the test profile with other probes (uncalibrated boosting, logistic regression, k-nearest neighbors) |
+| `rev_summary.py` | Summary of the threshold policies and the probe ablation |
+| `mc_profile.py` | Multi-class difficulty profile and profile-adapted class weights for long-tailed CIFAR |
+| `mc_lt.py` | ResNet-32 training on CIFAR-10-LT and CIFAR-100-LT with CE, focal, reweighting, logit adjustment, LDAM-DRW and profile-adapted losses |
+| `mc_aggregate.py` | Accuracy, macro-F1 and many/medium/few-shot accuracy of the multi-class runs, and agreement with the profile predictions |
 | `run_all.sh` | End-to-end pipeline |
 
 ## Usage
